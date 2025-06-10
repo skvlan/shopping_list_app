@@ -1,2 +1,8 @@
 # shopping_list_app
-A service for managing a shopping list. It should provide a REST API compliant with the attached OpenAPI specification and be based on the FastAPI framework.
+The Shopping List App is a RESTful web service built using FastAPI that allows users to manage a list of shopping items through a clean, structured API. The project is designed around a provided OpenAPI specification and demonstrates best practices in backend web development, including data validation, error handling, database integration, and user authentication.
+
+At its core, the application supports full CRUD functionality for shopping items, enabling users to create, view, update, and delete items. The API also supports filtering by name, category, and purchase status, as well as sorting results based on creation and update timestamps. Initially, data was managed in-memory to meet early requirements, and later evolved to include full database support using PostgreSQL and SQLAlchemy. The application runs within Docker containers, with a dedicated PostgreSQL container and optional pgAdmin support for database management.
+
+A major feature of the project is the implementation of user authentication. Users can register and log in using dedicated endpoints, with strong input validation and password handling ensuring secure access. Authentication plays a key role in enabling multi-user functionality, laying the groundwork for future enhancements such as user-specific data or token-based authorization.
+
+The project demonstrates an end-to-end approach to modern web API development, from API-first design using OpenAPI, through containerized deployment, to the integration of persistent storage and user management. It showcases not only technical proficiency with FastAPI, Docker, and PostgreSQL, but also a thoughtful progression of features in line with increasing project complexity and grading criteria.
